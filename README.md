@@ -4,7 +4,7 @@ This is a part of the SubText project
 
 ## Summary
 
-CL-VICTOR is a vector data structure that efficiently encodes variable-width data into a constant narrow-width datastream.  Victors work particularly well on data such as text containing mostly ASCII but some UNICODE characters, or 8-bit instructions that sometimes must be much wider to encode an address.  Originally designed as a CPU instruction fetch mechanism by Victor Yurkovsky, it works surprisingly well on certain kinds of data. 
+CL-VICTOR [1] is a vector data structure that efficiently encodes variable-width data into a constant narrow-width datastream.  Victors work particularly well on data such as text containing mostly ASCII but some UNICODE characters, or 8-bit instructions that sometimes must be much wider to encode an address.  Originally designed as a CPU instruction fetch mechanism [2], it works surprisingly well on certain kinds of data. 
 
 ## A simple example: ASCII text with multibyte characters.
 
@@ -33,13 +33,15 @@ Even more interesting: wide characters can be reused if they happen to be alread
 
 ## Reference
 
-The details are documented in an annoying series of articles here:
+1. Named after Victor Yurkovsky, the inventor
+   
+2. The details are documented in an annoying series of articles here:
 - [StrangeCPU #1: A new CPU](https://www.fpgarelated.com/showarticle/44.php)
 - [StrangeCPU #2. Sliding Window Token Machines](https://www.fpgarelated.com/showarticle/45.php)
 - [StrangeCPU #3. Instruction Slides - The Strangest CPU Yet!](https://www.fpgarelated.com/showarticle/46.php)
 - [StrangeCPU #4. Microcode](https://www.fpgarelated.com/showarticle/49.php)
 
-See the notes.org file here for implementation details and notes.
+3. See the notes.org file here for implementation details and notes.
 
 
 
