@@ -4,7 +4,7 @@ This is a part of the SubText project
 
 ## Summary
 
-CL-VICTOR [1] is a vector data structure that efficiently encodes variable-width data into a constant narrow-width datastream.  Victors work particularly well on data such as text containing mostly ASCII but some UNICODE characters, or 8-bit instructions that sometimes must be much wider to encode an address.  Originally designed as a CPU instruction fetch mechanism [2], it works surprisingly well on certain kinds of data. 
+CL-VICTOR [1] is a vector data structure that efficiently encodes mixed-width data into a constant narrow-width datastream with a sidechannel for wider data.  Victors work particularly well on data such as text containing mostly ASCII but some UNICODE characters, or 8-bit instructions that sometimes must be much wider to encode an address.  Originally designed as a CPU instruction fetch mechanism [2], it works surprisingly well on certain kinds of data. 
 
 ## A simple example: ASCII text with multibyte characters.
 
